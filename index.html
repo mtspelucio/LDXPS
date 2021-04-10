@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LDXPS</title>
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+<link href = "https://fonts.googleapis.com/css2? family = Roboto & display = swap" rel = "stylesheet ">
+</head>
+<body>
+    <div class="container">
+
+        <h1 onclick="goToHome()">LDXPS</h1>
+
+        <div id="home" class="home">
+            <div class="navbar">
+                <a onclick="btnCreateSeller()">Criar vendedor</a>
+                <a onclick="btnEditSeller()">Editar vendedor</a>
+                <a onclick="btnCreateClient()">Criar cliente</a>
+                <a onclick="btnEditClient()">Editar cliente</a>
+            </div>
+            
+            <div class="homeSellers">
+                <h2>Vendedores</h2>
+                <div class="listHome" id="lstSeller">
+                    <div class="hidden" id="lstClient"></div>
+                </div>
+            </div>
+            <button onclick="seeAll()">Todos</button>
+        </div>
+
+        <div id="createSeller" class="createSeller hidden">
+            <h3>Cadastro Vendedor</h3>
+            <p>Nome <input id="name" type="text"> </p>
+            <p>Data de nascimento <input id="date" type="date"></p>
+            <div class="sellerClient"></div>
+
+            <div class="btnCreateSeller" style="margin: 20px;">
+                <button id="confirm" onclick="newSeller()">Confirmar</button>
+                <button id="delete" onclick="deleteSeller()">Excluir</button>
+            </div>
+            <button id="register" onclick="goNewClient()">Criar Cliente</button>
+        </div>
+
+        <div id="editSeller" class="createSeller hidden">
+            <h3>Editar Vendedor</h3>
+            <p>Nome <input id="nameSellerEdit" type="text"> </p>
+            <p>Data de nascimento <input id="dateSellerEdit" type="date"></p>
+
+            <div class="btnCreateSeller" style="margin: 20px;">
+                <button id="confirm" onclick="editSeller()">Confirmar</button>
+            </div>
+            
+        </div>
+
+        <div id="createClient" class="createClient hidden">
+            <h3>Cadastro Cliente</h3>
+            <p>Nome <input id="nameClient" type="text"></p>
+            <p> Tipo de pessoa, PJ ou PF
+                <input id="peopleType" type="text"> 
+            </p>
+            <p>Limite de crédito <input id="limCred" type="number"></p>
+
+            <div id="sellerToClient"></div>
+            <div class="btnCreateClient" style="margin: 20px;">
+                <button id="confirm" onclick="newClient()">Confirmar</button>
+                <button id="delete" onclick="deleteClient()">Excluir</button>
+            </div>
+            <button id="register" onclick="goNewSeller()">Criar Vendedor</button>
+        </div>
+
+        <div id="editClient" class="createClient hidden">
+            <h3>Editar Cliente</h3>
+            <p>Nome <input id="nameClientEdit" type="text"></p>
+            <p> Tipo de pessoa, PJ ou PF
+                <input id="peopleTypeEdit" type="text"> 
+            </p>
+            <p>Limite de crédito <input id="limCredEdit" type="number"></p>
+
+            <div class="btnCreateClient" style="margin: 20px;">
+                <button id="confirm" onclick="editClient()">Confirmar</button>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

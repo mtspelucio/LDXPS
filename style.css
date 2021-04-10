@@ -1,0 +1,191 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#confirm{
+    background-color: #079907;
+}
+
+#delete{
+    background-color: #bd2525;
+}
+
+#register{
+    background-color: #fff;
+    color: #005fb8;
+}
+
+h1{
+    padding: 20px;
+    position: relative;
+    font-size: 50px;
+    color: #005fb8;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+/* PAGINA HOME */
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a{
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #4c6c8a;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeSellers{
+    margin-top: 20px;
+    height: 200px;
+    width: 96vh;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#lstSeller{
+    height: 150px;
+    width: 100%;
+    background-color: #e2e2e2;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+#lstSeller button{
+    font-size: 17px;
+    padding: 7px;
+    margin: 5px 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    color: #0b355c;
+}
+
+.home button{
+    font-size: 17px;
+    color: #ffffff;
+    background-color: #4c6c8a;
+    padding: 10px 20px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* PAGINA CADASTRO VENDEDOR */
+
+.createSeller{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.createSeller h3{
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.createSeller p{
+    margin-top: 10px;
+}
+
+.createSeller p input{
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e2e2e2;
+}
+
+.createSeller button{
+    font-size: 17px;
+    color: #ffffff;
+    background-color: #4c6c8a;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* PAGINA CADASTRO CLIENTE */
+
+.createClient{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.createClient h3{
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.createClient p{
+    margin-top: 10px;
+}
+
+.createClient input{
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e2e2e2;
+}
+
+#sellerToClient{
+    height: 150px;
+    width: 100%;
+    background-color: #e2e2e2;
+    border-radius: 10px;
+    margin-top: 5px;
+    width: 96vh;
+}
+
+#sellerToClient button{
+    font-size: 17px;
+    padding: 7px;
+    margin: 5px 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    color: #0b355c;
+}
+
+.createClient button{
+    font-size: 17px;
+    color: #ffffff;
+    background-color: #4c6c8a;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
